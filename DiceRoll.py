@@ -1,6 +1,5 @@
 '''
 Created on Nov 14, 2016
-
 @author: Jose
 '''
 
@@ -14,12 +13,12 @@ def guess():
     sides = 6
     rolling = True
     while rolling == True:
-        questi = input("Shall we role? enter = roll and q = quit")
+        questi = input("Roll the dice? Enter = Roll and Q = Quit")
         if questi.lower() != "q":
             num_roll = roll(sides)
-            print ("you got a ", num_roll)
+            print ("You rolled a", num_roll)
         else:
             rolling = False
-    print ("Hope you had fun!")
+    print ("Thanks for playing! Hope you had fun!")
     
 guess()
